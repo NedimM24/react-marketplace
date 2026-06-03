@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    font-family: var(--secondary-font);
+}
+:root {
+  --primary: #6366F1;   /* indigo */
+  --secondary: #14B8A6; /* teal */
+  --accent: #F43F5E;    /* rose */
+  --success: #84CC16;   /* lime green */
+  --bg: #F9FAFB;        /* soft white */
+  --text: #111827;      /* rich dark gray */
+
+    --primary-font: "Playfair Display", serif;
+    --secondary-font: "Montserrat", sans-serif;
+}
