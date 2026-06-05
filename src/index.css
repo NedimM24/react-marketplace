@@ -1,14 +1,15 @@
-body{
+body, html{
     margin: 0;
     font-family: var(--secondary-font);
+    height: 100%;
 }
 :root {
-  --primary: #6366F1;   /* indigo */
+   --primary: #2563EB;   /* strong blue */
   --secondary: #14B8A6; /* teal */
-  --accent: #F43F5E;    /* rose */
-  --success: #84CC16;   /* lime green */
-  --bg: #F9FAFB;        /* soft white */
-  --text: #111827;      /* rich dark gray */
+  --accent: #F43F5E;    /* rose red */
+  --success: #22C55E;   /* green */
+  --bg: #eaeaea;        /* unchanged */
+  --text: #1F2937;      /* dark slate (better on light bg) */
 
     --primary-font: "Playfair Display", serif;
     --secondary-font: "Montserrat", sans-serif;

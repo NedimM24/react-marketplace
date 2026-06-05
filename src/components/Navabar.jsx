@@ -4,7 +4,7 @@ import styles from "./Navbar.module.css"
 import logo from "../assets/logo.svg"
 
 
-export default function Navbar({navbarCartCount}){
+export default function Navbar(){
     return(
         <>
             <div className={styles.container}>
@@ -13,7 +13,7 @@ export default function Navbar({navbarCartCount}){
                 <div className={styles.allLinks}>
                      <Link className={styles.links} to={'/'}>Home</Link>
                     <Link className={styles.links} to={'/shop'}>Shop</Link>
-                    <Link className={styles.links} to={'/cart'}>🛒  {navbarCartCount > 0 ? navbarCartCount : ""}</Link>
+                    <Link className={styles.links} to={'/cart'}>🛒  </Link>
                 </div>
                
             </nav>

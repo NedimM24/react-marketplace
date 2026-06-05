@@ -1,17 +1,21 @@
 import { useState } from 'react'
 import { Outlet } from 'react-router'
-import Navbar from './componenets/Navabar'
+import Navbar from './components/Navabar'
+import { products } from './data/products'
 
 import './App.css'
 
 function App() {
-  //State for the navbar shop count
-  const [navbarCartCount, setNavbarCartCount] = useState(0);
+  const [cart, setCart] = useState([]);
+
+  //State for the products array. No need to set, read only 
+  const [productsArray] = useState(products);
+  
 
   return (
     <>
-     <Navbar navbarCartCount={navbarCartCount} />
-     <Outlet />
+     <Navbar />
+     <Outlet context={{productsArray, cart, setCart}} />
     </>
   )
 }

@@ -1,0 +1,32 @@
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.top{
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+   
+}
+
+.title{
+    color: white;
+}
+
+.topPic{
+    width: 100%;
+    height: auto;
+    
+    object-fit: cover;
+    
+}
+
+.bottom{
+    text-align: center;
+    font-size: large;
+    background-color: var(--accent);
+    padding: 1rem;
+    margin-top: auto;  
+}
