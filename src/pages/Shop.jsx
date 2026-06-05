@@ -6,7 +6,7 @@ export default function Shop() {
 
   return (
     <>
-      <h1>Shop</h1>
+     
         <div>
             {productsArray.map(product => (
                 <ProductCard key={product.id} product={product} />

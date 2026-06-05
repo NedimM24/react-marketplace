@@ -1,8 +1,10 @@
 import { useState } from "react"
 import styles from "./ProductCard.module.css"
-export function ProductCard({product}){
+
+export function ProductCard({ product }) {
     const [productCount, setProductCount] = useState(0)
-    return(
+
+    return (
         <>
             <div className={styles.container}> {/* container */}
                 <div> {/* top */}
@@ -10,19 +12,27 @@ export function ProductCard({product}){
                 </div>
 
                 <div> {/* bottom */}
-                    <p>{product.title}</p>
-                    <p>${product.price}</p>
+                    <div className={styles.titlePrice}>
+                        <p>{product.title}</p>
+                        <p>${product.price}</p>
+                    </div>
 
-                <div> {/* product state */}
-                    <button>-</button><input type="text" 
-                        value={productCount}
-                    />
-                    <button>+</button><br />
+                    <div className={styles.changeQuant}> {/* product state */}
+                       <div className={styles.userBtn}>
+                                <button className={styles.quantButtons}>-</button>
+                                <input
+                                    type="text"
+                                    value={productCount}
+                                    //onChange here
+                                />
+                                <button className={styles.quantButtons}>+</button><br />
+                        </div>
+
+                        <div className={styles.btn}>
+                            <button className={styles.addBtn} >Add</button>
+                        </div>
+                    </div>
                 </div>
-
-                    <button>Add To cart</button>
-                </div>
-
             </div>
         </>
     )

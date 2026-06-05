@@ -2,14 +2,14 @@ export const products = [
     {
         id: 1,
         image: "https://picsum.photos/200/200",
-        title: "Product Name",
+        title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
         price: 13,
         description: "This is a placeholder description",
     },
      {
         id: 2,
         image: "https://picsum.photos/200/200",
-        title: "Product Name",
+        title: "WD 2TB Elements Portable External Hard Drive - USB 3.0",
         price: 13,
         description: "This is a placeholder description",
     },

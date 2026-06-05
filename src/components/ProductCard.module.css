@@ -6,3 +6,65 @@
 img{
     width: 100%;
 }
+
+.titlePrice{
+    display: flex;
+    justify-content: space-between;
+}
+
+.changeQuant{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .3rem;
+    width: 100%;
+}
+
+.quantButtons{
+    background: none;
+    border: none;
+    background-color: var(--accent);
+    
+}
+
+.quantButtons:hover{
+    transform: scale(1.1);
+}
+
+.quantButtons:active{
+    transform: scale(1.07);
+}
+
+input{
+    width: 20%;
+    background: none;
+    text-align: center;
+    border: none;
+    background-color: var(--accent);
+}
+
+.btn{
+    justify-content: end;
+}
+
+.addBtn{
+    border: none;
+    background-color: var(--accent);
+    padding: .2rem;
+}
+
+.addBtn:hover{
+    transform: scale(1.1);
+}
+
+.addBtn:active{
+    transform: scale(1.07);
+}
+
+.userBtn{
+    display: flex;
+    justify-content: flex-start;
+    gap: .3rem;
+    
+}
+
