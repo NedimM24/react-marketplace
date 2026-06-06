@@ -13,7 +13,8 @@ export function ProductCard({ product }) {
 
                 <div> {/* bottom */}
                     <div className={styles.titlePrice}>
-                        <p>{product.title}</p>
+                        
+                        <p className={styles.title}>{product.title}</p>
                         <p>${product.price}</p>
                     </div>
 

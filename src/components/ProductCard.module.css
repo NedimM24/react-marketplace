@@ -10,6 +10,8 @@ img{
 .titlePrice{
     display: flex;
     justify-content: space-between;
+    gap: 0.5rem;
+    align-items: flex-start;
 }
 
 .changeQuant{
@@ -66,5 +68,8 @@ input{
     justify-content: flex-start;
     gap: .3rem;
     
+}
+.title{
+    min-height: 4rem;
 }
 
