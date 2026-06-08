@@ -1,4 +1,4 @@
-//Basic navebar not styled yet. Currently only here for navigation
+
 import { Link } from "react-router-dom"
 import styles from "./Navbar.module.css"
 import logo from "../assets/logo.svg"

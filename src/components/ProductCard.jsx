@@ -13,7 +13,9 @@ export function ProductCard({ product, cart, setCart }) {
 
         const existingItem = cart.find(item => item.id === product.id);
 
+        //Preventing the same item from popping up twice in the cart
         if (existingItem) {
+            //Updating quantity of existing object
             setCart(prev =>
             prev.map(item =>
                 item.id === product.id
@@ -22,6 +24,7 @@ export function ProductCard({ product, cart, setCart }) {
             )
             );
         } else {
+            //Add new object to the cart array
             setCart(prev => [...prev, cartItem]);
         }
 

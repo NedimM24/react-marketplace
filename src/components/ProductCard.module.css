@@ -43,6 +43,7 @@ input{
     text-align: center;
     border: none;
     background-color: var(--accent);
+    padding: .2rem;
 }
 
 .btn{
@@ -66,7 +67,7 @@ input{
 .userBtn{
     display: flex;
     justify-content: flex-start;
-    gap: .3rem;
+    gap: .4rem;
     
 }
 .title{

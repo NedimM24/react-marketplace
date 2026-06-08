@@ -9,10 +9,10 @@ export default function Cart() {
 
     if(!cart || cart.length === 0) {
         return(
-            <div>
+            <div className={styles.empty}>
                 <h1>Cart is Empty!</h1>
                 <h1>Get to shopping!</h1>
-                <button><Link className={styles.links} to={'/shop'}>Shop</Link></button>
+                <button className={styles.shopBtn}><Link className={styles.links} to={'/shop'}>Shop</Link></button>
             </div>
         )
     }

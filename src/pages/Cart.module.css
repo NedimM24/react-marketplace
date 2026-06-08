@@ -10,6 +10,31 @@
   padding: 1rem;
 }
 
+.empty{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+.shopBtn{
+    border: none;
+    background-color: var(--accent);
+    padding: .2rem;
+    width: 8rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.shopBtn:hover{
+    transform: scale(1.05);
+}
+
+.shopBtn:active{
+    transform: scale(1.03);
+}
+
 .right {
   flex: 1;
   position: sticky;
@@ -58,4 +83,13 @@
     .total{
         margin-top: 2rem;
     }
+
+    .empty{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 3rem;
+}
 }

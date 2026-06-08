@@ -12,6 +12,7 @@ export function CartItem({ item, setCart }) {
         }
 
 
+    // Decrease the quantity by 1 and remove it from the array if its 0
     const decrease = () => {
         setCart(prev =>
             prev.map(cartItem =>
@@ -22,6 +23,7 @@ export function CartItem({ item, setCart }) {
             .filter(cartItem => cartItem.quantity > 0)
         )
     }
+
   return (
     <div className={styles.container}>
       <img src={item.image} alt="placeholder image" className={styles.image} />
@@ -36,6 +38,14 @@ export function CartItem({ item, setCart }) {
           <button onClick={decrease} className={styles.quantButtons}>-</button>
           <input type="text" 
           value={item.quantity}
+          onChange={(e) => {
+            const value = Number(e.target.value);
+            setCart((prev) => 
+                prev.map((cartItem) =>
+                    cartItem.id === item.id
+                    ?{...cartItem, quantity:value} : cartItem))
+                
+          }}
            />
           <button onClick={increase} className={styles.quantButtons}>+</button>
         </div>
