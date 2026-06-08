@@ -13,6 +13,7 @@ function App() {
         title: "placeholder",
         price: 13,
         description: "This is a placeholder description",
+        quantity: 0,
     },
   ]);
 

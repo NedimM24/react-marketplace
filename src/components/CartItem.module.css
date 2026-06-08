@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  padding: .5rem;
+  align-items: center; 
+  gap: 16px; 
+  background-color: var(--bg);
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.rightSide {
+  display: flex;
+  flex-direction: column; 
+  gap: 8px; 
+}
+
+.text p {
+  margin: 0;
+}
+
+.changeQuant {
+  display: flex;
+  align-items: center;
+  gap: 4px; 
+}
+
+.quantButtons{
+    border: none;
+    background-color: var(--accent);
+    
+}
