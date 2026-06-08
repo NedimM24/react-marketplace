@@ -31,5 +31,12 @@
 .quantButtons{
     border: none;
     background-color: var(--accent);
-    
+}
+
+.quantButtons:hover{
+    transform: scale(1.1);
+}
+
+.quantButtons:active{
+    transform: scale(1.07);
 }

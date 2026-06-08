@@ -1,9 +1,9 @@
 import { useState } from "react"
 import styles from "./ProductCard.module.css"
 
-export function ProductCard({ product }) {
-    const [productCount, setProductCount] = useState(0)
-
+export function ProductCard({ product, cart, setCart }) {
+    const [quantity, setQuantity] = useState(0);
+    
     return (
         <>
             <div className={styles.container}> {/* container */}
@@ -22,11 +22,11 @@ export function ProductCard({ product }) {
                        <div className={styles.userBtn}>
                                 <button className={styles.quantButtons}>-</button>
                                 <input
-                                    type="text"
-                                    value={productCount}
-                                    //onChange here
+                                type="text"
+                                value={quantity}
+                                onChange={(e) => setQuantity(Number(e.target.value))}
                                 />
-                                <button className={styles.quantButtons}>+</button><br />
+                                <button onClick={() => setQuantity(prev => prev + 1)} className={styles.quantButtons}>+</button><br />
                         </div>
 
                         <div className={styles.btn}>

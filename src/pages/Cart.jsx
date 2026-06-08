@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Cart() {
     const { productsArray, cart, setCart } = useOutletContext();
-    const total = cart.reduce((sum, item) => sum + item.price, 0);
+    const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
     if(!cart || cart.length === 0) {
         return(
@@ -19,7 +19,6 @@ export default function Cart() {
 
     return (
         <>
-            
             <div className={styles.container}> {/* Container */}
 
                 <div className={styles.left}> {/* Left side contains cartitems */}
@@ -32,7 +31,7 @@ export default function Cart() {
 
                 <div className={styles.right}>
                     {/* Right side will have cart total and checkout button */}
-                    <p>Cart total: ${total}</p>
+                    <p className={styles.total}>Cart total: ${total}</p>
                     <button className={styles.btn}>Checkout</button>
                 </div>
 

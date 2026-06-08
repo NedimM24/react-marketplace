@@ -9,11 +9,13 @@
 }
 
 .logo{
+    margin-top: .5rem;
     width: 150px;
     height: auto;   
 }
 
 .links{
+    margin-top: .5rem;
     color: black;
     text-decoration: none;
 }
@@ -36,4 +38,18 @@
     margin-left: auto;
     display: flex;
     gap: 1rem;
+}
+
+.count{
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.count{
+    transform: scale(0.7) translateY(-60px);
+    text-align: center;
+    font-weight: bolder;
+    font-size: large;
+    padding: .2rem;
 }
