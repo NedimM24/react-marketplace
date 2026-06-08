@@ -6,7 +6,15 @@ import { products } from './data/products'
 import './App.css'
 
 function App() {
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState([
+    {
+        id: 1,
+        image: "https://picsum.photos/200/200",
+        title: "placeholder",
+        price: 13,
+        description: "This is a placeholder description",
+    },
+  ]);
 
   //State for the products array. No need to set, read only 
   const [productsArray] = useState(products);

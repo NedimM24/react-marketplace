@@ -3,7 +3,9 @@ import { ProductCard } from "../components/ProductCard";
 import styles from "./Shop.module.css";
 
 export default function Shop() {
-  const { productsArray } = useOutletContext();
+  //useOutletContext passing props to use
+  //Need to create a dunction to setCart (adding to cart) once user clicks add
+  const { productsArray, cart, setCart } = useOutletContext();
 
   return (
     <div className={styles.container}>
