@@ -16,7 +16,7 @@ export default function Cart() {
             </div>
         )
     }
-
+ 
     return (
         <>
             <div className={styles.container}> {/* Container */}
@@ -24,7 +24,7 @@ export default function Cart() {
                 <div className={styles.left}> {/* Left side contains cartitems */}
                     {cart.map((item) => (
                         <div key={item.id} className={styles.cartItem}>
-                            <CartItem item={item} />
+                            <CartItem item={item} setCart={setCart} />
                         </div>
                     ))}
                 </div>

@@ -1,6 +1,27 @@
 import styles from "./CartItem.module.css";
 
-export function CartItem({ item }) {
+export function CartItem({ item, setCart }) {
+
+    const increase = () => {
+        setCart(prev =>
+            prev.map(cartItem =>
+                cartItem.id === item.id
+                    ?{...cartItem, quantity: cartItem.quantity + 1}
+                    :cartItem
+            ))
+        }
+
+
+    const decrease = () => {
+        setCart(prev =>
+            prev.map(cartItem =>
+                cartItem.id === item.id
+                    ?{...cartItem, quantity: cartItem.quantity - 1}
+                    :cartItem
+            )
+            .filter(cartItem => cartItem.quantity > 0)
+        )
+    }
   return (
     <div className={styles.container}>
       <img src={item.image} alt="placeholder image" className={styles.image} />
@@ -12,9 +33,11 @@ export function CartItem({ item }) {
         </div>
 
         <div className={styles.changeQuant}>
-          <button className={styles.quantButtons}>-</button>
-          <input type="text" value={item.quantity} readOnly />
-          <button className={styles.quantButtons}>+</button>
+          <button onClick={decrease} className={styles.quantButtons}>-</button>
+          <input type="text" 
+          value={item.quantity}
+           />
+          <button onClick={increase} className={styles.quantButtons}>+</button>
         </div>
       </div>
     </div>

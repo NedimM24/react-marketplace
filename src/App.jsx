@@ -13,29 +13,14 @@ function App() {
   //State for the products array. No need to set, read only 
   const [productsArray] = useState(products);
 
-  //Function that increases the quantity by 1 if the + button is clicked
-  const handleIncrease = (product) => {
-    setCart((prev) => {
-      const exists = prev.find((item) => item.id === product.id);
-
-      if(exists) {
-        return prev.map((item)=>
-          item.id === product.id
-          ?{...item, quantity: item.quantity + 1 } : item)
-      } else {
-        return [...prev, {...product, quantity: 1}]
-      }
-    })
-  }
-  
-
   return (
     <>
      <Navbar totalQuantity={totalQuantity}/>
      <Outlet context={{
       productsArray, 
       cart, 
-      setCart, handleIncrease}} />
+      setCart, 
+      }} />
     </>
   )
 }

@@ -3,7 +3,31 @@ import styles from "./ProductCard.module.css"
 
 export function ProductCard({ product, cart, setCart }) {
     const [quantity, setQuantity] = useState(0);
-    
+
+    //Function that created a new object to add to the cart array
+    //Updated quantity
+    const handleAdd = () => {
+        if (quantity <= 0) return;
+
+        const cartItem = { ...product, quantity };
+
+        const existingItem = cart.find(item => item.id === product.id);
+
+        if (existingItem) {
+            setCart(prev =>
+            prev.map(item =>
+                item.id === product.id
+                ? { ...item, quantity: item.quantity + quantity }
+                : item
+            )
+            );
+        } else {
+            setCart(prev => [...prev, cartItem]);
+        }
+
+        setQuantity(0);
+        };
+
     return (
         <>
             <div className={styles.container}> {/* container */}
@@ -20,7 +44,16 @@ export function ProductCard({ product, cart, setCart }) {
 
                     <div className={styles.changeQuant}> {/* product state */}
                        <div className={styles.userBtn}>
-                                <button className={styles.quantButtons}>-</button>
+                                <button
+                                    onClick={() => {
+                                        if (quantity > 0) {
+                                        setQuantity(prev => prev - 1);
+                                        }
+                                    }}
+                                    className={styles.quantButtons}
+                                    >
+                                    -
+                                    </button>
                                 <input
                                 type="text"
                                 value={quantity}
@@ -30,7 +63,7 @@ export function ProductCard({ product, cart, setCart }) {
                         </div>
 
                         <div className={styles.btn}>
-                            <button className={styles.addBtn} >Add</button>
+                            <button onClick={handleAdd} className={styles.addBtn} >Add</button>
                         </div>
                     </div>
                 </div>
