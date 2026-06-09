@@ -8,7 +8,7 @@ export default function Navbar({totalQuantity}){
         <>
             <div className={styles.container}>
             <nav className={styles.nav} >
-                <img className={styles.logo} src={logo} alt="" />
+                <img className={styles.logo} src={logo} alt="company logo" />
                 <div className={styles.allLinks}>
                      <Link className={styles.links} to={'/'}>Home</Link>
                     <Link className={styles.links} to={'/shop'}>Shop</Link>

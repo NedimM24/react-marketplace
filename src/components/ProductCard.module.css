@@ -1,6 +1,6 @@
 .container{
     border: solid 1px black;
-    padding: 1rem;
+    padding: .6rem;
     display: flex;
     flex-direction: column;
    
