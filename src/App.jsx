@@ -10,9 +10,6 @@ function App() {
   //Get total quantity
   const totalQuantity = (cart.reduce((sum, item) => sum + item.quantity,0))
 
-  //State for the products array. No need to set, read only (SWAP NEXT)
-  //const [productsArray] = useState(products);
-
   //new array that will be fetched, ill clear the products array and link it here
   const [productsArray, setProductsArray] = useState([]);
 

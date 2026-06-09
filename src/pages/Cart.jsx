@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Cart() {
     const { productsArray, cart, setCart } = useOutletContext();
-    const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+    const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0).toFixed(2);
 
     if(!cart || cart.length === 0) {
         return(
