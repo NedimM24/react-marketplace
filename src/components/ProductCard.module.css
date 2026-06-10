@@ -1,3 +1,14 @@
+.quantButtons,
+.addBtn {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  appearance: none;
+}
+
 .container{
     border: solid 1px black;
     padding: .6rem;

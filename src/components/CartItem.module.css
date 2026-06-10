@@ -1,3 +1,8 @@
+
+.input{
+  padding: .2rem;
+}
+
 .container {
   display: flex;
   padding: 1rem;
@@ -29,10 +34,15 @@
   gap: 4px; 
 }
 
-.quantButtons{
-    border: none;
-    background-color: var(--accent);
-    padding: .2rem;
+.quantButtons {
+  border: none;
+  background-color: var(--accent);
+  padding: .2rem;
+  cursor: pointer;
+
+  appearance: none;
+  -webkit-appearance: none;
+  
 }
 
 .quantButtons:hover{

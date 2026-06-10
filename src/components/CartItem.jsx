@@ -36,7 +36,7 @@ export function CartItem({ item, setCart }) {
 
         <div className={styles.changeQuant}>
           <button onClick={decrease} className={styles.quantButtons}>-</button>
-          <input type="text" 
+          <input className={styles.input} type="text" 
           value={item.quantity}
           onChange={(e) => {
             const value = Number(e.target.value);
