@@ -2,10 +2,6 @@
 .addBtn {
   background: none;
   border: none;
-  color: inherit;
-  font: inherit;
-  cursor: pointer;
-  text-decoration: none;
   appearance: none;
 }
 

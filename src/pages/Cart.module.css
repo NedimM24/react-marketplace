@@ -1,3 +1,4 @@
+
 .container {
   display: flex;
   height: 100vh;
@@ -26,8 +27,9 @@
     text-decoration: none;
     color: inherit;
 
+    
+    border: none;
     appearance: none;
-    -webkit-appearance: none;
 }
 
 .shopBtn:hover{
@@ -60,8 +62,9 @@
     border: none;
     background-color: var(--accent);
     padding: .2rem;
+    
+    border: none;
     appearance: none;
-   -webkit-appearance: none;
 }
 
 .btn:hover{
