@@ -25,7 +25,7 @@ function App() {
         }
 
         const data = await response.json();
-        setProductsArray(data.slice(0, 12))
+        setProductsArray(data.slice(0, 20))
       } catch (error) {
         console.log(error);
         
