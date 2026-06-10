@@ -39,12 +39,17 @@ function App() {
 
   return (
     <>
-     <Navbar totalQuantity={totalQuantity}/>
-     <Outlet context={{
-      productsArray, 
-      cart, 
-      setCart, 
-      }} />
+      <div className='app'>
+        <Navbar totalQuantity={totalQuantity}/>
+        <main className='content'>
+          <Outlet context={{
+          productsArray, 
+          cart, 
+          setCart, 
+          }} />
+        </main>
+      </div>
+      
     </>
   )
 }

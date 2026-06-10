@@ -1,5 +1,7 @@
 body, html{
     margin: 0;
+    padding: 0;
+    
     font-family: var(--secondary-font);
     height: 100%;
 }
@@ -14,3 +16,4 @@ body, html{
     --primary-font: "Playfair Display", serif;
     --secondary-font: "Montserrat", sans-serif;
 }
+
