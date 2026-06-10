@@ -1,19 +1,99 @@
-# React + Vite
+# React Marketplace
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## https://react-marketplace-pi.vercel.app/
 
-Currently, two official plugins are available:
+A simple e-commerce web application built with React. It includes product browsing, a shopping cart system, and routing. The project is component-based and styled using CSS Modules.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Product listing page with reusable product cards
+- Shopping cart with quantity management
+- Add/remove/update items in cart
+- Persistent cart state via React state management
+- Client-side routing using React Router
+- Responsive layout for different screen sizes
+- Unit testing with Vitest and React Testing Library
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# react-marketplace
-# react-marketplace
-# react-marketplace
+## Tech Stack
+
+- React
+- React Router
+- CSS Modules
+- Vitest
+- React Testing Library
+
+---
+
+## Pages
+
+### Home
+Landing page with a simple introduction and store image.
+
+### Shop
+Displays all products and allows users to add items to the cart.
+
+### Cart
+Shows all added items, allows quantity updates, and displays the total price.
+
+---
+
+## State Management
+
+Cart state is managed in React using useState and shared between routes using React Router context, allowing dynamic updates across the application.
+
+Each cart item stores:
+- Product data
+- Quantity
+
+---
+
+## Testing
+
+The project includes unit tests for major components:
+
+- Navbar tests (rendering and navigation links)
+- Home page content rendering
+- Shop page rendering product cards
+
+Tests are written using:
+- Vitest
+- React Testing Library
+
+---
+
+## Getting Started
+
+### Install dependencies
+
+npm install
+
+### Run development server
+
+npm run dev
+
+## Future Improvements
+
+- Backend integration (database for products and cart persistence)
+- Authentication system
+- Checkout functionality
+- Improved form validation
+- Global state management (Redux or Context API refactor)
+
+---
+
+## What I Learned
+
+- Using React Router for navigation
+- Handling basic cart logic (add, update, remove items)
+
+---
+
+## Roadblocks & Challenges
+
+- Managing cart state without duplicating items
+- Keeping quantity updates consistent across components
+- Handling controlled input values for quantities
