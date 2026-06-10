@@ -1,6 +1,15 @@
 # React Marketplace
 
-## https://react-marketplace-pi.vercel.app/
+## Live Demo 
+https://react-marketplace-pi.vercel.app/
+
+## Preview
+<img width="1238" height="1158" alt="image" src="https://github.com/user-attachments/assets/8a9eaf26-c3bb-418c-92ad-e0b8c78c681e" />
+
+<img width="1234" height="1152" alt="image" src="https://github.com/user-attachments/assets/a4d19677-9e3e-46a5-8dc2-daf1fe43de5d" />
+
+<img width="1237" height="1149" alt="image" src="https://github.com/user-attachments/assets/ab3576c2-afe9-4a46-b749-196a7b2b00d5" />
+
 
 A simple e-commerce web application built with React. It includes product browsing, a shopping cart system, and routing. The project is component-based and styled using CSS Modules.
 
